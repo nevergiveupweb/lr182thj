@@ -67,7 +67,7 @@ let textone = document.querySelector('.textone').querySelector('h1');
       let textthree = document.querySelector('.textthree').querySelector('h1');
 
       setTimeout(function(){
-        textone.innerHTML = '杰宝，这是我为你做的星空，希望你喜欢';
+        textone.innerHTML = '杰宝，这是我为你做的晚霞，希望你喜欢';
           textone.style.color = '#E8F9FD';
           textone.style.fontFamily = '楷体'
           texttwo.style.color = '#E8F9FD';
