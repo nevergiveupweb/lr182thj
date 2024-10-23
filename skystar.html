@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>半周年纪念日</title>
+    <style>
+      /* 添加以下CSS样式来定位音乐播放按钮 */
+      .music-button {
+        position: absolute;
+        bottom: 10px; /* 距离底部10px */
+        left: 10px; /* 距离左边10px */
+        padding: 10px 20px; /* 按钮内边距 */
+        cursor: pointer; /* 鼠标悬停时显示指针 */
+      }
+      
+      /* 您可以在这里添加更多样式 */
+    </style>
+    <link rel="stylesheet" href="css/skystar.css">
+  </head>
+  <body>
+    <video id="videofilm" poster="img/skystar2.jpg" autoplay muted loop>
+      <source src="video/skystar.mp4" type="video/mp4">
+    </video>
+    <div class="textone">
+      <h1>杰宝</h1>
+    </div>
+    <div class="texttwo">
+      <h1>今天是我们在一起的第182天</h1>
+    </div>
+    <div class="textthree">
+      <h1></h1>
+    </div>
+    
+    <!-- 添加一个按钮元素 -->
+    <button class="music-button" onclick="toggleMusic()">播放/暂停音乐</button>
+    
+    <!-- 隐藏原生的音频控件 -->
+    <audio id="musicPlayer" src="video/晴天.mp3" loop>
+      您的浏览器不支持 audio 元素。
+    </audio>
+    
+    <div class="container"></div>
+    <script src="js/skystar.js"></script>
+    
+    <!-- 添加控制音乐播放的脚本 -->
+    <script>
+      var music = document.getElementById('musicPlayer');
+
+      function toggleMusic() {
+        if (music.paused) {
+          music.play();
+        } else {
+          music.pause();
+        }
+      }
+    </script>
+    
+  </body>
+</html>
